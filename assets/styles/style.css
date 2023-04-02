@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(220, 220, 220);
+  font-family: "Nunito Sans", sans-serif;
+}
+h1 {
+  margin-left: 10%;
+}
+.basket {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 10px;
+}
+.basket__basket-container {
+  margin: 2% 5% 2% 10%;
+  display: grid;
+  gap: 10px;
+}
+.basket__inner {
+  padding: 2%;
+  background-color: white;
+}
+.basket__shop {
+  padding-left: 2%;
+}
+.basket__card {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 6px;
+  gap: 5px;
+}
+img {
+  width: 100%;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.basket__text-container {
+  display: grid;
+  grid-template-columns: 25% 5% 50% 10% 10%;
+  grid-template-areas:
+    "thing-name thing-name thing-name thing-name thing-name"
+    "thing-quantity-text thing-quantity . thing-price thing-price-text";
+}
+.basket__thing-name {
+  grid-area: thing-name;
+  text-decoration: none;
+}
+.basket__thing-quantity-text {
+  grid-area: thing-quantity-text;
+}
+.basket__thing-quantity {
+  grid-area: thing-quantity;
+}
+.basket__thing-price {
+  grid-area: thing-price;
+}
+.basket__thing-price-text {
+  grid-area: thing-price-text;
+}
+.basket__payment-container {
+  background-color: white;
+  height: 50vh;
+  margin: 5% 20% 0% 5%;
+  padding: 15px;
+  display: grid;
+  grid-template-areas:
+    "payment-text totalSum totalSum-text"
+    "discount discount discount";
+  align-items: center;
+  justify-items: center;
+}
+.basket__payment-text {
+  grid-area: payment-text;
+}
+.basket__totalSum-text {
+  grid-area: totalSum-text;
+}
+#totalSum {
+  grid-area: totalSum;
+}
+#discount {
+  grid-area: discount;
+  height: 50px;
+}
